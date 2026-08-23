@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
-export default defineConfig({plugins:[react(),tailwindcss()],server:{port:5186}})
+export default defineConfig({base: '/rental-matcher/',
+  plugins: [react(),tailwindcss()],server:{port:5186}})
